@@ -1,7 +1,11 @@
 export const fileUpload = async (file) => {
 
+    // if (!file) {
+    //     throw new error('No tenemos ningún archivo a subir.')
+    // }
+
     if (!file) {
-        throw new error('No tenemos ningún archivo a subir.')
+        return null
     }
 
     const cloudUrl = 'https://api.cloudinary.com/v1_1/crjapp/upload'
@@ -26,8 +30,7 @@ export const fileUpload = async (file) => {
         return cloudResp.secure_url
 
     } catch (error) {
-
-        console.log(error)
-        throw new error(error.message)
+        // throw new error(error.message)
+        return null
     }
 }
