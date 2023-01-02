@@ -1,7 +1,8 @@
-import { AppBar, Box, Divider, Drawer, Grid, List, Toolbar, Typography } from "@mui/material"
-import { useSelector } from "react-redux"
-import { SideBarItem } from "./SideBarItem"
-import logo from '../../assets/LogoWA120.png'
+import { AppBar, Box, Divider, Drawer, List, Toolbar, Typography } from "@mui/material";
+import Scrollbars from "react-custom-scrollbars-2";
+import { useSelector } from "react-redux";
+import logo from '../../assets/LogoWA120.png';
+import { SideBarItem } from "./SideBarItem";
 
 export const SideBar = ({ drawerWidht = 240 }) => {
 
@@ -28,13 +29,16 @@ export const SideBar = ({ drawerWidht = 240 }) => {
                 </Toolbar>
                 <Divider />
 
-                <List sx={{ mb: 2, pb: '50px' }}>
-                    {
-                        notes.map(note => (
-                            <SideBarItem key={note.id} {...note} />
-                        ))
-                    }
-                </List>
+                <Scrollbars>
+                    <List sx={{ mb: 2, pb: '50px' }}>
+                        {
+                            notes.map(note => (
+                                <SideBarItem key={note.id} {...note} />
+                            ))
+                        }
+                    </List>
+                </Scrollbars>
+
 
                 <AppBar position="fixed" color="background" sx={{ top: 'auto', bottom: 0, width: drawerWidht, left: 0, alignItems: 'center' }}>
                     <Toolbar>

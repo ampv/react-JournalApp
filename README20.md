@@ -15,7 +15,7 @@
     |    1.3 Crear base de datos -> modo producción
 
     2. https://sweetalert2.github.io/ --Para las alertas/ventanas emergentes
-     
+
     |    2.1 npm install sweetalert2
 
     3. https://cloudinary.com/ --Hosting para las imagenes
@@ -38,8 +38,8 @@
     |    -todo trabaja en base a colecciones y en las colecciones estan los documentos
     |    -las colecciones serian un listado de documentos
 
-    2. Cloudinary: 
-        
+    2. Cloudinary:
+
     |    setvicio que permite subir imagenes, videos y hacer modificaciones de las mismas.
 
 ## Notas
@@ -94,3 +94,8 @@
     |   1.4 git branch -M main
     |   1.5 git remote add origin https://github.com/ampv/react-JournalApp.git -> aquí va la url del repositorio.
     |   1.6 git push -u origin main
+
+## Custom scroll bars
+
+    1.  https://www.npmjs.com/package/react-custom-scrollbars-2?activeTab=readme
+    |   1.1 npm install react-custom-scrollbars-2 --save
