@@ -54,7 +54,38 @@ export const NoteView = () => {
     }
 
     const onDelete = () => {
-        dispatch(startDeletingNote())
+
+        Swal.fire({
+            icon: 'warning',
+            title: '¿Seguro que desea eliminar esta nota?',
+            showDenyButton: true,
+            confirmButtonText: 'Eliminar',
+            denyButtonText: 'Cancelar'
+
+        }).then((result) => {
+
+            if (result.isConfirmed) {
+
+                dispatch(startDeletingNote())
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡ La nota ha sido eliminada !',
+                    timer: 1500,
+                    timerProgressBar: true,
+                    showConfirmButton: false,
+                })
+
+            } else if (result.isDenied) {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡ Candelado !',
+                    timer: 1500,
+                    timerProgressBar: true,
+                    showConfirmButton: false,
+                })
+            }
+        })
+
     }
 
     return (
@@ -127,6 +158,7 @@ export const NoteView = () => {
                 justifyContent={'end'}>
 
                 <Button
+                    disabled={isSaving}
                     onClick={onDelete}
                     sx={{ mt: 2 }}
                     color='error'>
