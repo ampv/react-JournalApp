@@ -22,9 +22,6 @@ export const JournalPage = () => {
                     : <NothingSelectedView />
             }
 
-            {/* <NothingSelectedView /> */}
-            {/* <NoteView /> */}
-
             <IconButton
                 onClick={onClickNewNote}
                 disabled={isSaving}

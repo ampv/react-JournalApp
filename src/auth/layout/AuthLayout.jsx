@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material"
-import wave from '../../assets/wave.png'
 import wa from '../../assets/logoWA.png'
+import wave from '../../assets/wave.png'
 
 export const AuthLayout = ({ children, title = '' }) => {
     return (
@@ -17,7 +17,7 @@ export const AuthLayout = ({ children, title = '' }) => {
                 <img src={wave} />
             </Grid>
 
-            <Grid item className="img" sx={{mb:10}}>
+            <Grid item className="img" sx={{ mb: 10 }}>
                 <img src={wa} />
             </Grid>
 
