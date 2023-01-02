@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "esmodules": true
+                }
+            }
+        ],
+        [
+            "@babel/react",
+            {
+                "runtime": "automatic",
+                "jsx": "react-jsx"
+            }
+        ]
+    ]
+}
