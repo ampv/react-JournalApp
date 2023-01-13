@@ -34,7 +34,7 @@ export const SideBarItem = ({ title = '', body, id, date, imageUrls = [] }) => {
                     <TurnedInNot />
                 </ListItemIcon>
                 <Grid container>
-                    <ListItemText primary={newTitle} />
+                    <ListItemText primary={<b>{newTitle}</b>} />
                     <ListItemText secondary={newBody} />
                 </Grid>
             </ListItemButton>

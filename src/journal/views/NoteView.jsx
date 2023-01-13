@@ -7,6 +7,7 @@ import { UseForm } from "../../hooks/"
 import { setActiveNote, startDeletingNote, startSaveNote, startUploadingFiles } from "../../store/journal"
 import { ImageGalery } from "../components"
 
+
 export const NoteView = () => {
 
     const { active: note, messageSaved, isSaving } = useSelector(state => state.journal)
@@ -14,9 +15,8 @@ export const NoteView = () => {
     const dispatch = useDispatch()
 
     const dateString = useMemo(() => {
-
         const newDate = new Date(date)
-        return newDate.toUTCString()
+        return newDate.toLocaleString()
 
     }, [date])
 
