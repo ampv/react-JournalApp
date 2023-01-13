@@ -65,3 +65,8 @@
     |    {
     |        "import": "whatwg-fetch"
     |    }   
+
+## Recursos para las pruebas con cloudinary
+
+    1. https://cloudinary.com/documentation/node_integration
+    |   1.1 npm install cloudinary
