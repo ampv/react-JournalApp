@@ -44,8 +44,7 @@
     |            [
     |                "@babel/react",
     |                {
-    |                    "runtime": "automatic",
-    |                    "jsx": "react-jsx"
+    |                    "runtime": "automatic"
     |                }
     |            ]
     |        ]
@@ -69,4 +68,5 @@
 ## Recursos para las pruebas con cloudinary
 
     1. https://cloudinary.com/documentation/node_integration
-    |   1.1 npm install cloudinary
+    |   1.1 npm install -D cloudinary
+    |   1.2 npm i -D setimmediate

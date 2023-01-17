@@ -11,8 +11,7 @@
         [
             "@babel/react",
             {
-                "runtime": "automatic",
-                "jsx": "react-jsx"
+                "runtime": "automatic"
             }
         ]
     ]
