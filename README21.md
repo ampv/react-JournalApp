@@ -70,3 +70,7 @@
     1. https://cloudinary.com/documentation/node_integration
     |   1.1 npm install -D cloudinary
     |   1.2 npm i -D setimmediate
+
+## Definiciones
+    1. Variables de entorno: Son variables que pueden cambiar dependiendo del entorno.
+    2. para que las propiedades sean publicas, deben llevar la palabra VITE al inicio.
