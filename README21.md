@@ -71,6 +71,17 @@
     |   1.1 npm install -D cloudinary
     |   1.2 npm i -D setimmediate
 
+--------------------------------------------------------
 ## Definiciones
+
     1. Variables de entorno: Son variables que pueden cambiar dependiendo del entorno.
     2. para que las propiedades sean publicas, deben llevar la palabra VITE al inicio.
+    |   2.1: VITE_EJEMPLO: EJEMPLO REACT    
+    
+    3. Para acceder a las variables de entorno:
+    |   3.1 import.meta.env
+    |   3.2 En la parte del testign no se admite el import.meta.env
+
+## Instalaciones
+
+    1. npm i -D dotenv  -> sirve para cargar las env por el lado de NODE

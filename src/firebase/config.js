@@ -1,6 +1,10 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore/lite';
+import { getEnvironments } from "../helpers";
+
+const env = getEnvironments()
+console.log(env);
 
 const firebaseConfig = {
     apiKey: "AIzaSyB-1SUNaZoOaZW_9Lt1ffmx1uxZ-9oLaPE",
