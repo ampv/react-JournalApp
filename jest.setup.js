@@ -1,6 +1,9 @@
-{
-    "import": "whatwg-fetch,setimmediate"
-}
+import 'whatwg-fetch'
+import 'setimmediate'
+
+// {
+//     "import": "whatwg-fetch,setimmediate"
+// }
 
 require('dotenv').config({
     path:'.env.test'

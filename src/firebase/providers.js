@@ -15,7 +15,7 @@ export const singInWithGoogle = async () => {
         }
 
     } catch (error) {
-
+        initializeApp
         const errorCode = error.code
         const errorMessage = error.errorMessage
 

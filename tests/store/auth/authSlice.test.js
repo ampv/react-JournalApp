@@ -49,13 +49,13 @@ describe('Pruebas en el authSlice', () => {
             email: null,
             displayName: null,
             photoURL: null,
-            errorMessage: errorMesssage
+            errorMessage: undefined
         })
     })
 
     test('debe de cambiar el estado a cheking', () => {
 
         const state = authSlice.reducer(authenticatedState, chekingCredentials())
-        expect(state.status).toBe('cheking')
+        expect(state.status).toBe('Cheking')
     })
 })

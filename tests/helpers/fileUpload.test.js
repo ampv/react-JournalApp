@@ -1,5 +1,5 @@
-import { fileUpload } from "../../src/helpers/fileUpload"
 import { v2 as cloudinary } from 'cloudinary'
+import { fileUpload } from "../../src/helpers/fileUpload"
 
 cloudinary.config({
     cloud_name: 'diecfxsaw',
@@ -18,7 +18,7 @@ describe('Pruebas en fileUpload', () => {
         const file = new File([blob], 'foto.jpg')
         const url = await fileUpload(file)
 
-        expect(typeof url).toBe('string')
+        expect(typeof url).toBe('String')
         console.log(url);
 
         const segments = url.split('/')
