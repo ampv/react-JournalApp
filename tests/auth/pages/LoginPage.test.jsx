@@ -1,11 +1,9 @@
+import { configureStore } from '@reduxjs/toolkit';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit';
 import { MemoryRouter } from 'react-router-dom';
-
 import { LoginPage } from '../../../src/auth/pages/LoginPage';
-import { authSlice, } from '../../../src/store/auth';
-import { startGoogleSignIn } from '../../../src/store/auth/thunks';
+import { authSlice } from '../../../src/store/auth';
 import { notAuthenticatedState } from '../../fixtures/authFixtures';
 
 const mockStartGoogleSignIn = jest.fn();
