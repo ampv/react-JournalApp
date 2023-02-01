@@ -52,6 +52,9 @@ export const LoginPage = () => {
                             placeholder='Contraseña'
                             fullWidth
                             name="password"
+                            inputProps={{
+                                'data-testid':'password'
+                            }}
                             value={password}
                             onChange={onInputChange}
                         />
